@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:28:44 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/14 18:39:28 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/14 18:57:25 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strchr(const char *s, int c)
 		if (s[i] == '\0' && car != '\0')
 			break ;
 		if (s[i] == car)
-			return (&s[i]);
+			return ((char *)&s[i]);
 		i++;
 	}
 	return (NULL);
