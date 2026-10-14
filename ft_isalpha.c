@@ -6,12 +6,13 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:55:13 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/13 17:55:37 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/14 16:03:13 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-int		ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
 }
