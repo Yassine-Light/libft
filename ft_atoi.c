@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 07:55:26 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/15 08:05:44 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/15 11:27:39 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ int	ft_atoi(const char *nptr)
 	atoi = 0;
 	while (ft_isspace(nptr[i]))
 		i++;
-	while (nptr[i] == '+' || nptr[i] == '-')
+	if (nptr[i] == '+' || nptr[i] == '-')
 	{
 		if (nptr[i] == '-')
 			sign *= -1;
 		i++;
 	}
-	while (nptr[i] >= '0' && nptr[i] <= '9')
+	while (ft_isdigit(nptr[i]))
 	{
 		atoi = atoi * 10 + (nptr[i] - '0');
 		i++;
