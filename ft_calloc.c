@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 09:31:09 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/15 10:59:22 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/15 18:17:15 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		unique = malloc(0);
 		return (unique);
 	}
-	if (nmemb > __SIZE_MAX__ / size)
+	if (nmemb > SIZE_MAX / size)
 		return (NULL);
 	total_size = nmemb * size;
 	cal = malloc(total_size);
