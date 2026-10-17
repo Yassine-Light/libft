@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 17:06:35 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/14 17:33:20 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/17 09:22:07 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*sptr;
 	size_t				i;
 
+	if (n == 0 || dest == src)
+		return (dest);
 	dptr = (unsigned char *)dest;
 	sptr = (unsigned char *)src;
 	i = 0;
