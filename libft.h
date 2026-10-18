@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:19:39 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/18 09:20:59 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/18 10:53:16 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ int		ft_atoi(const char *nptr);
 void	*ft_calloc(size_t nelem, size_t elsize);
 char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 #endif
