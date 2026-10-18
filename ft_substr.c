@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 09:16:13 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/18 09:37:11 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/18 10:18:15 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	len_src;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
 	len_src = ft_strlen(s);
 	if (start >= len_src)
 	{
