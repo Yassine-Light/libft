@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 13:01:34 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/19 15:45:20 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/20 11:27:45 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	ft_putnbr_fd(int n, int fd)
 	char	snbr[11];
 	int		i;
 
+	if (fd == -1)
+		return ;
 	nb = n;
 	i = 0;
 	if (n == 0)

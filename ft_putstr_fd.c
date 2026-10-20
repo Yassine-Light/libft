@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 12:43:09 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/19 12:46:58 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/20 11:28:14 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
-	if (!s)
+	if (!s || fd == -1)
 		return ;
 	i = 0;
 	while (s[i])
