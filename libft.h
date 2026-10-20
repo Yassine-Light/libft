@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 17:19:39 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/20 15:20:19 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/20 15:22:23 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,5 @@ void				ft_putnbr_fd(int n, int fd);
 t_list				*ft_lstnew(void *content);
 unsigned int		ft_lstsize(t_list *lst);
 t_list				*ft_lstlast(t_list *lst);
+void				ft_lstadd_back(t_list **lst, t_list *new);
 #endif
