@@ -6,7 +6,7 @@
 /*   By: ylaghrib <ylaghrib@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 09:16:13 by ylaghrib          #+#    #+#             */
-/*   Updated: 2026/10/19 09:09:04 by ylaghrib         ###   ########.fr       */
+/*   Updated: 2026/10/20 12:11:38 by ylaghrib         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	len_src = ft_strlen(s);
 	if (start >= len_src)
 		return (handle_out_of_bound());
+	if (len > len_src - start)
+		len = len_src - start;
 	sub = malloc(sizeof(char) * len + 1);
 	if (!sub)
 		return (NULL);
